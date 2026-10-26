@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --banana-cream: #ffe74c;
+    --color-baltic-blue: #336699;
+    --color-banana-cream: #ffe74c;
+    --color-baby-blue-ice: #9ac4f8;
     --color-black: #000000;
     --color-crushed-berry: #880d1e;
     --color-dust-grey: #cbd2d0;
     --color-medium-jungle: #3da35d;
     --color-pale-slate: #acadbc;
     --color-platinum: #e8e9eb;
+    --color-powder-blue: #9eadc8;
     --color-royal-gold: #ffe45e;
     --color-ruby-red: #a31621;
     --color-white: #fff;
+    --color-wisteria-blue: #72a1e5;
 }
 
 * {
@@ -33,4 +37,40 @@ body {
     height: 100%;
     padding: 0.5rem;
     width: 100%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.welcome-message {
+    color: var(--color-baltic-blue);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 30rem;
+}
+
+.logo {
+    height: 7rem;
+}
+
+.form-login {
+    display: flex;
+}
+
+.form-input {
+    border: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    width: 12rem;
+}
+
+.form-input:focus {
+    border: 1px solid var(--color-pale-slate);
+    outline: none;
 }
