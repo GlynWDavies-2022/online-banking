@@ -5,6 +5,7 @@
     --color-banana-cream: #ffe74c;
     --color-baby-blue-ice: #9ac4f8;
     --color-black: #000000;
+    --color-charcoal: #505168;
     --color-coral-glow: #ff8360;
     --color-crushed-berry: #880d1e;
     --color-dust-grey: #cbd2d0;
@@ -54,11 +55,11 @@ nav {
     color: var(--color-baltic-blue);
     font-size: 1.25rem;
     font-weight: 500;
-    margin-left: 25rem;
+    margin-left: 50rem;
 }
 
 .logo {
-    height: 7rem;
+    height: 8rem;
 }
 
 .form-login {
@@ -93,7 +94,7 @@ nav {
     padding: 0.5rem 2rem;
 }
 
-.application {
+.account {
     border: 2px solid var(--color-coral-glow);
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -101,18 +102,41 @@ nav {
     grid-gap: 0.5rem;
     height: 87%;
     margin: 1rem;
-    padding: 1rem 20rem;
+    padding: 0.5rem 20rem;
 }
 
-.balance {
+.account-balance {
+    align-items: center;
     border: 2px solid var(--color-coral-glow);
+    display: flex;
+    flex-direction: row;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
-.transactions {
+.account-balance-label {
+    color: var(--color-charcoal);
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.account-balance-date {
+    color: var(--color-charcoal);
+    font-size: 1.25rem;
+}
+
+.account-balance-amount {
+    color: var(--color-charcoal);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.account-transactions {
     border: 2px solid var(--color-coral-glow);
     grid-column-start: 1;
     grid-column-end: 2;
@@ -120,7 +144,11 @@ nav {
     grid-row-end: 5;
 }
 
-.transfer {
+.service {
+    padding: 3rem;
+}
+
+.service-transfer {
     border: 2px solid var(--color-coral-glow);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -128,7 +156,7 @@ nav {
     grid-row-end: 3;
 }
 
-.loan {
+.service-loan {
     border: 2px solid var(--color-coral-glow);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -136,7 +164,7 @@ nav {
     grid-row-end: 4;
 }
 
-.close {
+.service-close {
     border: 2px solid var(--color-coral-glow);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -144,10 +172,30 @@ nav {
     grid-row-end: 5;
 }
 
-.summary {
+.account-summary {
+    align-items: center;
     border: 2px solid var(--color-coral-glow);
+    display: flex;
+    flex-direction: row;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.account-summary p {
+    color: var(--color-charcoal);
+    margin-right: 0.25rem;
+}
+
+.account-summary p.account-summary-direction {
+    margin-right: 1rem;
+}
+
+.account-summary p.account-summary-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 3rem;
 }

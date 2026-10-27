@@ -20,19 +20,38 @@
         </form>
     </nav>
     <!-- Main Content Area -->
-    <main class="application">
+    <main class="account">
         <!-- Account Balance -->
-        <div class="balance"></div>
+        <div class="account-balance">
+            <div class="account-balance-label-set">
+                <p class="account-balance-label">Current balance</p>
+                <p class="account-balance-date">As of <span class="date">2030-10-30</span></p>
+            </div>
+            <p class="account-balance-amount">£23,908.00</p>
+        </div>
         <!-- Transactions -->
-        <div class="transactions"></div>
+        <div class="account-transactions"></div>
         <!-- Account Summary -->
-        <div class="summary"></div>
+        <div class="account-summary">
+            <p class="account-summary-direction">IN</p>
+            <p class="account-summary-amount">£20,800.00</p>
+            <p class="account-summary-direction">OUT</p>
+            <p class="account-summary-amount">£10,900.00</p>
+            <p class="account-summary-direction">INTEREST</p>
+            <p class="account-summary-amount">£500.00</p>
+        </div>
         <!-- Transfer -->
-        <div class="transfer"></div>
+        <div class="service service-transfer">
+            <h2>Transfer Money</h2>
+        </div>
         <!-- Loan -->
-        <div class="loan"></div>
+        <div class="service service-loan">
+            <h2>Loan Money</h2>
+        </div>
         <!-- Close Account -->
-        <div class="close"></div>
+        <div class="service service-close">
+            <h2>Close Account</h2>
+        </div>
     </main>
     <script src="scripts.js"></script>
 </body>
